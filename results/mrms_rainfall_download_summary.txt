@@ -1,0 +1,30 @@
+MRMS Hurricane Florence Rainfall Download Summary
+================================================
+
+Project:
+Rainfall-to-Streamflow Modeling of Hurricane Florence Flooding
+in the Trent River Watershed, North Carolina
+
+Rainfall product:
+MRMS GaugeCorr_QPE_01H
+
+Product interpretation:
+Hourly gauge-corrected quantitative precipitation estimate
+
+Requested UTC period:
+2018-09-13 00:00:00+00:00 through 2018-09-18 00:00:00+00:00, exclusive
+
+Download summary
+----------------
+Expected hourly files: 120
+Successfully available files: 120
+Files not found: 0
+Failed downloads: 0
+Total compressed data size: 67.15 MB
+
+Next processing step
+--------------------
+The downloaded GRIB2 rainfall grids will be clipped to the Trent River
+watershed polygon and spatially averaged to construct an hourly
+basin-average rainfall time series for comparison with observed USGS
+streamflow and later HEC-HMS model input.
