@@ -1,0 +1,21 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Local secrets/config
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large/raw downloaded datasets
+data/raw/rainfall/*
+data/raw/watershed/*
+
+# Keep folder structure
+!data/raw/rainfall/.gitkeep
+!data/raw/watershed/.gitkeep

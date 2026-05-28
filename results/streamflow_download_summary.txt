@@ -1,0 +1,40 @@
+USGS Streamflow Download and Quality-Control Summary
+=================================================
+
+Project:
+Rainfall-to-Streamflow Modeling of Hurricane Florence Flooding
+in the Trent River Watershed, North Carolina
+
+Study site:
+Trent River near Trenton, NC
+
+USGS monitoring location:
+USGS-02092500
+
+Parameter:
+Discharge, cubic feet per second (00060)
+
+Study period:
+September 10 through September 22, 2018, Eastern Time
+
+Quality-control summary
+-----------------------
+Number of downloaded observations: 787
+Valid discharge observations: 787
+Missing discharge observations: 0
+Duplicate timestamps after processing: 0
+First observation: 2018-09-10 00:00:00-04:00
+Last observation: 2018-09-23 00:00:00-04:00
+
+Maximum discharge in downloaded record
+--------------------------------------
+Peak discharge: 67,700 cubic feet per second
+Peak timestamp: 2018-09-16 07:00:00-04:00
+
+Interpretation note
+-------------------
+This observed discharge record will be used as the target hydrograph
+for later rainfall-runoff modeling and synthetic storm scenario analysis.
+The official USGS Hurricane Florence flood assessment reported an
+estimated peak discharge of approximately 67,700 cubic feet per second
+at this station on September 16, 2018.
