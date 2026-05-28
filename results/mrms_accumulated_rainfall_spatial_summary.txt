@@ -1,0 +1,22 @@
+MRMS Accumulated Rainfall Spatial Summary
+=========================================
+
+Project:
+Rainfall-to-Streamflow Modeling of Hurricane Florence Flooding
+in the Trent River Watershed, North Carolina
+
+Number of hourly rainfall grids accumulated: 120
+
+Spatial accumulated-rainfall statistics
+---------------------------------------
+Mean watershed-cell accumulated rainfall: 24.39 inches
+Median watershed-cell accumulated rainfall: 24.31 inches
+Minimum watershed-cell accumulated rainfall: 18.26 inches
+Maximum watershed-cell accumulated rainfall: 31.76 inches
+
+Interpretation note
+-------------------
+This map provides an initial spatial assessment of MRMS-estimated storm
+rainfall within the Trent River watershed. It will be used to evaluate
+whether a basin-average hyetograph is an appropriate first modeling
+representation and to identify any notable within-basin rainfall gradients.
