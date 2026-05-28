@@ -1,0 +1,36 @@
+Watershed Boundary Acquisition Summary
+======================================
+
+Project:
+Rainfall-to-Streamflow Modeling of Hurricane Florence Flooding
+in the Trent River Watershed, North Carolina
+
+Study site:
+Trent River near Trenton, NC
+
+USGS monitoring location:
+USGS-02092500
+
+Boundary source:
+U.S. Geological Survey Network Linked Data Index (NLDI) basin endpoint
+
+Successful delineation method:
+Standard upstream basin: full resolution with splitCatchment=false
+
+Method note:
+The precise split-catchment request failed at the USGS service, so this boundary represents the standard upstream NHDPlus basin assembled from whole catchments. It remains appropriate for initial basin-average rainfall processing, subject to the area comparison below.
+
+Drainage-area comparison
+------------------------
+Calculated polygon area: 175.67 square miles
+Published USGS drainage area: 168.00 square miles
+Difference: 7.67 square miles
+Percent difference: 4.56 percent
+
+Interpretation note
+-------------------
+The downloaded polygon represents the contributing upstream watershed used
+for initial spatial averaging of Hurricane Florence precipitation. If the
+calculated area differs materially from the published 168-square-mile USGS
+drainage area, an alternative delineation method will be evaluated before
+formal model calibration.

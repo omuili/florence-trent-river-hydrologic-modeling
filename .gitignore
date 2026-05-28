@@ -19,3 +19,6 @@ data/raw/watershed/*
 # Keep folder structure
 !data/raw/rainfall/.gitkeep
 !data/raw/watershed/.gitkeep
+
+# Keep project watershed boundary geometry
+!data/raw/watershed/*.geojson

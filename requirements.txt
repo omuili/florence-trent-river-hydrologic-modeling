@@ -1,3 +1,6 @@
 ﻿matplotlib>=3.8
 pandas>=2.1
 requests>=2.31
+geopandas>=1.0
+pyproj>=3.6
+shapely>=2.0
