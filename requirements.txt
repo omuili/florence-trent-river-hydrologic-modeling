@@ -4,3 +4,4 @@ requests>=2.31
 geopandas>=1.0
 pyproj>=3.6
 shapely>=2.0
+rasterio>=1.3

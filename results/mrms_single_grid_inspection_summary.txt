@@ -1,0 +1,31 @@
+MRMS Single-Grid Inspection Summary
+===================================
+
+Project:
+Rainfall-to-Streamflow Modeling of Hurricane Florence Flooding
+in the Trent River Watershed, North Carolina
+
+Rainfall grid inspected:
+GaugeCorr_QPE_01H_00.00_20180914-120000.grib2.gz
+
+Raster metadata
+---------------
+Driver: GRIB
+Coordinate reference system: GEOGCS["Coordinate System imported from GRIB file",DATUM["unnamed",SPHEROID["Spheroid imported from GRIB file",6378160,298.253916296469]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AXIS["Latitude",NORTH],AXIS["Longitude",EAST]]
+Raster width: 7000
+Raster height: 3500
+Raster bands: 1
+NoData value: None
+
+Watershed-clipped rainfall results
+----------------------------------
+Valid watershed grid cells: 452
+Basin-average hourly rainfall: 7.168 mm
+Maximum watershed grid-cell rainfall: 12.900 mm
+
+Interpretation
+--------------
+This test confirms that the MRMS GRIB2 rainfall product can be read
+within the Python workflow and clipped to the Trent River watershed.
+The next step will apply this procedure to all 120 hourly rainfall grids
+to construct a basin-average Hurricane Florence precipitation time series.
