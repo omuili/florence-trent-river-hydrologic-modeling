@@ -1,0 +1,34 @@
+Project: Nahunta_Florence_Event_Model
+     Description: Hurricane Florence event reconstruction for Nahunta Swamp near Shine, NC (USGS 02091000)
+     Version: 4.13
+     Filepath Separator: \
+     DSS File Name: Nahunta_Florence_Event_Model.dss
+     Time Zone ID: America/New_York
+End:
+
+Precipitation: Florence_MRMS_Met
+     Filename: Florence_MRMS_Met.met
+     Description: MRMS basin-average hourly precipitation for Hurricane Florence response modeling
+     Last Modified Date: 29 May 2026
+     Last Modified Time: 18:23:56
+End:
+
+Basin: Nahunta_Lumped_Basin
+     Filename: Nahunta_Lumped_Basin.basin
+     Description: Single-basin Hurricane Florence event model for USGS 02091000
+     Last Modified Date: 29 May 2026
+     Last Modified Time: 18:19:59
+End:
+
+Basin: Nahunta_Clark_Trial_01
+     Filename: Nahunta_Clark_Trial_01.basin
+     Description: No-baseflow Clark routing trial with increased Tc and storage coefficient
+     Last Modified Date: 29 May 2026
+     Last Modified Time: 18:32:34
+End:
+
+Control: Florence_PreMichael_Control
+     FileName: Florence_PreMichael_Control.control
+     Description: Hurricane Florence response simulation ending before Tropical Storm Michael impacts
+End:
+

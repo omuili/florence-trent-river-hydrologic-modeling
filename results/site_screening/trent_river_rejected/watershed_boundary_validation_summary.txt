@@ -1,0 +1,43 @@
+Final Watershed Boundary Validation Summary
+===========================================
+
+Project:
+Rainfall-to-Streamflow Modeling of Hurricane Florence Flooding
+in the Trent River Watershed, North Carolina
+
+Study site:
+Trent River near Trenton, NC
+
+USGS station:
+02092500
+
+Boundary-selection decision
+---------------------------
+Final modeling boundary: USGS StreamStats delineated basin
+Reason: The StreamStats report returned DRNAREA = 168 square miles,
+which exactly matches the published USGS drainage area for station
+02092500. The NLDI basin remains preserved only as a preliminary
+quality-control comparison boundary.
+
+Area comparison calculated from exported geometries
+---------------------------------------------------
+Published USGS drainage area: 168.00 square miles
+StreamStats exported polygon area: 167.66 square miles
+StreamStats difference from published value: -0.34 square miles
+NLDI fallback polygon area: 175.67 square miles
+NLDI difference from published value: 7.67 square miles
+
+Boundary overlap comparison
+---------------------------
+Intersection area: 162.44 square miles
+Area included only by NLDI fallback: 13.22 square miles
+Area included only by StreamStats: 5.22 square miles
+Percentage of StreamStats basin overlapping NLDI boundary: 96.89 percent
+
+Modeling implication
+--------------------
+All final basin-average rainfall calculations and later HEC-HMS model
+inputs will use the verified StreamStats basin boundary. Preliminary
+rainfall summaries created with the NLDI fallback geometry are retained
+for quality-control documentation only and are not treated as final
+model inputs.

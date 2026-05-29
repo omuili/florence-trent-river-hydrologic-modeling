@@ -1,0 +1,60 @@
+Final Modeling-Window Diagnostic Summary
+========================================
+
+Project:
+Rainfall-to-Streamflow Modeling of Hurricane Florence Flooding
+in the Trent River Watershed, North Carolina
+
+Study site:
+Trent River near Trenton, NC
+
+USGS station:
+02092500
+
+Verified modeling inputs
+------------------------
+Watershed boundary: USGS StreamStats verified basin
+Published drainage area used for volume conversion: 168.00 square miles
+Rainfall product: MRMS GaugeCorr_QPE_01H
+Analysis window: 2018-09-10 00:00:00-04:00 through 2018-10-11 00:00:00-04:00, exclusive
+Number of hourly timesteps analyzed: 744
+
+Rainfall-period comparison
+--------------------------
+Total basin-average rainfall through October 10: 21.75 inches
+Rainfall through September 22: 20.97 inches
+Rainfall from September 23 through October 10: 0.79 inches
+Later-period rainfall as percentage of analysis-window total: 3.61 percent
+
+Post-September-22 rainfall days receiving at least
+0.25 inches:
+- 2018-09-25: 0.38 inches
+
+Observed discharge response
+---------------------------
+Pre-event median discharge: 39 cubic feet per second
+Peak observed discharge: 67,700 cubic feet per second
+Peak observed discharge timestamp: 2018-09-16 07:00:00-04:00
+Discharge at analysis-window endpoint: 70 cubic feet per second
+Endpoint discharge divided by pre-event median: 1.79
+
+Interval water-balance screening
+--------------------------------
+Observed total streamflow depth over analysis interval: 11.05 inches
+Observed flow depth above constant pre-event median discharge: 10.81 inches
+Screening ratio of above-baseline flow depth to rainfall depth: 0.497
+
+Interpretation and modeling decision
+------------------------------------
+The September 10 through October 10 period captures the dominant Florence
+rainfall forcing and the available pre-Michael river response. Because the
+river does not return to pre-event baseline discharge before the cutoff,
+the above-baseline streamflow depth and runoff ratio are incomplete
+interval-based screening metrics rather than complete direct-runoff or
+event water-balance estimates.
+
+This interval is suitable for calibration of peak discharge, time to peak,
+and hydrograph shape over the observed pre-Michael response period, provided
+all rainfall pulses identified above are included in model forcing. It is
+not suitable for claiming a complete Florence runoff volume or a fully
+closed event water balance.

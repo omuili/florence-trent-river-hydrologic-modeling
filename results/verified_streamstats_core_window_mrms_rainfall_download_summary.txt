@@ -12,15 +12,15 @@ Product interpretation:
 Hourly gauge-corrected quantitative precipitation estimate
 
 Requested UTC period:
-2018-09-10 04:00:00+00:00 through 2018-10-11 04:00:00+00:00, exclusive
+2018-09-13 00:00:00+00:00 through 2018-09-18 00:00:00+00:00, exclusive
 
 Download summary
 ----------------
-Expected hourly files: 744
-Successfully available files: 744
+Expected hourly files: 120
+Successfully available files: 120
 Files not found: 0
 Failed downloads: 0
-Total compressed data size: 506.36 MB
+Total compressed data size: 67.15 MB
 
 Next processing step
 --------------------

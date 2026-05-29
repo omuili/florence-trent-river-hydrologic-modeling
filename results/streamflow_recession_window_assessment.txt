@@ -1,0 +1,54 @@
+Streamflow Recession-Window Assessment
+======================================
+
+Project:
+Rainfall-to-Streamflow Modeling of Hurricane Florence Flooding
+in the Trent River Watershed, North Carolina
+
+Study site:
+Trent River near Trenton, NC
+
+USGS monitoring location:
+USGS-02092500
+
+Extended discharge screening period
+-----------------------------------
+First hourly observation: 2018-09-10 00:00:00-04:00
+Last hourly observation: 2018-10-11 00:00:00-04:00
+Number of hourly discharge values: 745
+
+Pre-event baseline screening
+----------------------------
+Baseline interval: 2018-09-10 00:00:00-04:00 through 2018-09-12 12:00:00-04:00, exclusive
+Median baseline discharge: 39 cfs
+Near-baseline threshold used for screening: 49 cfs
+Threshold definition: 125 percent of pre-event median discharge
+
+Observed Florence peak
+----------------------
+Peak discharge: 67,700 cfs
+Peak timestamp: 2018-09-16 07:00:00-04:00
+
+Evaluation of current September 10-22 candidate window
+------------------------------------------------------
+Discharge at current candidate-window endpoint:
+1,055 cfs at
+2018-09-22 23:00:00-04:00
+
+Endpoint discharge divided by baseline median:
+26.78
+
+Recession screening result
+--------------------------
+The discharge record did not return within 25 percent of pre-event median flow during the extended screening period.
+
+Interpretation guidance
+-----------------------
+If discharge at the current endpoint remains substantially greater than
+pre-event baseline flow, the September 10-22 period truncates the recession
+limb and should not be used for final event-volume analysis or model
+calibration. The final model period should extend through a defensible
+post-event recession endpoint and use precipitation covering that same period.
+
+This screening uses a simple baseline-return criterion and is intended for
+model-period selection rather than formal baseflow separation.

@@ -1,0 +1,62 @@
+USGS Daily Discharge Volume Verification Summary
+==============================================
+
+Project:
+Rainfall-to-Streamflow Modeling of Hurricane Florence Flooding
+in the Trent River Watershed, North Carolina
+
+Study site:
+Trent River near Trenton, NC
+
+USGS station:
+02092500
+
+Verification objective
+----------------------
+Determine whether the above-rainfall streamflow-volume result persists when
+using official USGS daily mean discharge rather than interpolation-assisted
+hourly discharge.
+
+Daily discharge dataset
+-----------------------
+Daily records downloaded: 31
+First daily record: 2018-09-10
+Last daily record: 2018-10-10
+Approval status values returned: Approved
+Maximum daily mean discharge: 63,500 cfs
+Date of maximum daily mean discharge: 2018-09-16
+
+Rainfall reference
+------------------
+Complete MRMS basin-average rainfall depth: 25.60 inches
+
+Official daily mean discharge volume check
+------------------------------------------
+Pre-event daily mean baseline discharge: 41 cfs
+Total discharge depth from daily mean values: 42.84 inches
+Above-baseline discharge depth from daily mean values: 42.56 inches
+Daily-data above-baseline depth / rainfall depth: 1.662
+
+Interpolation-assisted hourly comparison
+----------------------------------------
+Total discharge depth from hourly completed series: 42.85 inches
+Above-baseline discharge depth from hourly completed series: 42.57 inches
+Hourly completed-series above-baseline depth / rainfall depth: 1.663
+
+Decision
+--------
+The official USGS daily mean discharge record also yields an
+above-baseline flow depth greater than MRMS rainfall depth. Therefore, the
+volume mismatch is not caused solely by interpolation of hourly discharge
+gaps. This site/event should not be calibrated using runoff volume or total
+hydrograph-volume objectives without further investigation of discharge
+rating uncertainty, precipitation bias, and possible hydraulic complexity.
+Peak discharge and timing may still be used cautiously as observed targets.
+
+Important flood-discharge limitation
+------------------------------------
+The USGS Hurricane Florence assessment documents the 67,700 cfs peak at
+this station as an estimated peak streamflow based on a provisional
+rating-curve extension, with peak stage determined from a high-water mark
+identified after the event. Flood-period discharge interpretation should
+therefore retain this documented uncertainty.

@@ -1,0 +1,87 @@
+Observed Hydrograph Gap-Filling and Water-Balance Summary
+=========================================================
+
+Project:
+Rainfall-to-Streamflow Modeling of Hurricane Florence Flooding
+in the Trent River Watershed, North Carolina
+
+Study site:
+Trent River near Trenton, NC
+
+USGS station:
+02092500
+
+Analysis window
+---------------
+2018-09-10 00:00:00-04:00 through 2018-10-11 00:00:00-04:00, exclusive
+
+Discharge data preparation
+--------------------------
+Hourly discharge values directly observed by USGS: 645
+Hourly discharge values filled by interpolation: 100
+Number of short bounded gaps filled: 20
+Maximum consecutive missing-hour run allowed: 6
+
+Gap-filling rule
+----------------
+Only short internal gaps bounded by observed discharge values were filled.
+Linear time interpolation was used to create an hourly screening hydrograph.
+Measured USGS discharge remains the authoritative observed record; interpolated
+values are intended for continuous hydrograph display and interval-volume
+screening only.
+
+Interpolated periods
+--------------------
+- 2018-09-15 13:00:00-04:00 through 2018-09-15 17:00:00-04:00: 5 interpolated hours
+- 2018-09-15 19:00:00-04:00 through 2018-09-15 23:00:00-04:00: 5 interpolated hours
+- 2018-09-16 01:00:00-04:00 through 2018-09-16 05:00:00-04:00: 5 interpolated hours
+- 2018-09-16 08:00:00-04:00 through 2018-09-16 11:00:00-04:00: 4 interpolated hours
+- 2018-09-16 13:00:00-04:00 through 2018-09-16 17:00:00-04:00: 5 interpolated hours
+- 2018-09-16 19:00:00-04:00 through 2018-09-16 23:00:00-04:00: 5 interpolated hours
+- 2018-09-17 01:00:00-04:00 through 2018-09-17 05:00:00-04:00: 5 interpolated hours
+- 2018-09-17 07:00:00-04:00 through 2018-09-17 11:00:00-04:00: 5 interpolated hours
+- 2018-09-17 13:00:00-04:00 through 2018-09-17 17:00:00-04:00: 5 interpolated hours
+- 2018-09-17 19:00:00-04:00 through 2018-09-17 23:00:00-04:00: 5 interpolated hours
+- 2018-09-18 01:00:00-04:00 through 2018-09-18 05:00:00-04:00: 5 interpolated hours
+- 2018-09-18 07:00:00-04:00 through 2018-09-18 11:00:00-04:00: 5 interpolated hours
+- 2018-09-18 13:00:00-04:00 through 2018-09-18 17:00:00-04:00: 5 interpolated hours
+- 2018-09-18 19:00:00-04:00 through 2018-09-18 23:00:00-04:00: 5 interpolated hours
+- 2018-09-19 01:00:00-04:00 through 2018-09-19 05:00:00-04:00: 5 interpolated hours
+- 2018-09-19 07:00:00-04:00 through 2018-09-19 11:00:00-04:00: 5 interpolated hours
+- 2018-09-19 13:00:00-04:00 through 2018-09-19 17:00:00-04:00: 5 interpolated hours
+- 2018-09-19 19:00:00-04:00 through 2018-09-19 23:00:00-04:00: 5 interpolated hours
+- 2018-09-20 01:00:00-04:00 through 2018-09-20 05:00:00-04:00: 5 interpolated hours
+- 2018-09-20 07:00:00-04:00 through 2018-09-20 12:00:00-04:00: 6 interpolated hours
+
+Corrected rainfall totals from complete MRMS record
+---------------------------------------------------
+Total basin-average rainfall through October 10: 25.60 inches
+Rainfall through September 22: 24.82 inches
+Rainfall from September 23 through October 10: 0.79 inches
+
+Observed peak retained from measured USGS record
+------------------------------------------------
+Peak discharge: 67,700 cubic feet per second
+Peak timestamp: 2018-09-16 07:00:00-04:00
+
+Interpolation-assisted water-balance screening
+----------------------------------------------
+Pre-event median observed discharge: 39 cubic feet per second
+Discharge at analysis-window endpoint: 70 cubic feet per second
+Endpoint discharge divided by pre-event median: 1.78
+Total streamflow depth over analysis interval: 42.85 inches
+Flow depth above constant pre-event median: 42.58 inches
+Screening ratio of above-baseline flow depth to rainfall depth: 1.663
+
+Modeling interpretation
+-----------------------
+The complete MRMS rainfall record must be used as model forcing. The
+interpolation-assisted observed hydrograph may be used for visual assessment
+and screening water-balance calculations because all filled gaps are short
+and bounded by measured observations. Model performance conclusions should
+report measured-peak reproduction and observed-timestamp comparisons
+separately from interpolation-assisted continuous-hydrograph diagnostics.
+
+Because discharge remains above pre-event median flow at the pre-Michael
+cutoff, the screening runoff ratio should not be described as a complete
+Florence event runoff coefficient.

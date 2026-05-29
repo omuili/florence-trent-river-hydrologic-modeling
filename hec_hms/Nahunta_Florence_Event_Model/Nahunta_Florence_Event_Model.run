@@ -1,0 +1,54 @@
+Run: Baseline_Initial_Parameters
+     Default Description: Yes
+     Log File: Baseline_Initial_Parameters.log
+     DSS File: Baseline_Initial_Parameters.dss
+     Is Save Spatial Results: No
+     Last Modified Date: 29 May 2026
+     Last Modified Time: 18:02:53
+     Last Execution Date: 29 May 2026
+     Last Execution Time: 18:00:27
+     Basin: Nahunta_Lumped_Basin
+     Precip: Florence_MRMS_Met
+     Control: Florence_PreMichael_Control
+     Save State Type: None
+     Time-Series Output: Save All
+     Time Series Results Manager Start:
+     Time Series Results Manager End:
+End:
+
+Run: Diagnostic_No_Baseflow
+     Default Description: Yes
+     Log File: Diagnostic_No_Baseflow.log
+     DSS File: Diagnostic_No_Baseflow.dss
+     Is Save Spatial Results: No
+     Last Modified Date: 29 May 2026
+     Last Modified Time: 18:13:09
+     Last Execution Date: 29 May 2026
+     Last Execution Time: 18:13:03
+     Basin: Nahunta_Lumped_Basin
+     Precip: Florence_MRMS_Met
+     Control: Florence_PreMichael_Control
+     Save State Type: None
+     Time-Series Output: Save All
+     Time Series Results Manager Start:
+     Time Series Results Manager End:
+End:
+
+Run: Run: Trial_01_Clark_Tc16_R30
+     Default Description: Yes
+     Log File: Run__Trial_01_Clark_Tc16_R30.log
+     DSS File: Run__Trial_01_Clark_Tc16_R30.dss
+     Is Save Spatial Results: No
+     Last Modified Date: 29 May 2026
+     Last Modified Time: 18:38:19
+     Last Execution Date: 29 May 2026
+     Last Execution Time: 18:38:19
+     Basin: Nahunta_Clark_Trial_01
+     Precip: Florence_MRMS_Met
+     Control: Florence_PreMichael_Control
+     Save State Type: None
+     Time-Series Output: Save All
+     Time Series Results Manager Start:
+     Time Series Results Manager End:
+End:
+

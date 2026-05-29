@@ -1,0 +1,31 @@
+Meteorology: Florence_MRMS_Met
+     Description: MRMS basin-average hourly precipitation for Hurricane Florence response modeling
+     Last Modified Date: 29 May 2026
+     Last Modified Time: 18:23:56
+     Version: 4.13
+     Unit System: English
+     Set Missing Data to Default: No
+     Precipitation Method: Specified Average
+     Air Temperature Method: None
+     Atmospheric Pressure Method: None
+     Dew Point Method: None
+     Wind Speed Method: None
+     Shortwave Radiation Method: None
+     Longwave Radiation Method: None
+     Snowmelt Method: None
+     Evapotranspiration Method: No Evapotranspiration
+     Use Basin Model: Nahunta_Lumped_Basin
+     Use Basin Model: Nahunta_Clark_Trial_01
+End:
+
+Precip Method Parameters: Specified Average
+     Last Modified Date: 29 May 2026
+     Last Modified Time: 17:44:35
+     Allow Depth Override: No
+End:
+
+Subbasin: Nahunta_Swamp_02091000
+     Last Modified Date: 29 May 2026
+     Last Modified Time: 17:50:50
+     Gage: Nahunta_MRMS_Hourly_Precip
+End:

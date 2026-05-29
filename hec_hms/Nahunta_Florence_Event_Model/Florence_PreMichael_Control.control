@@ -1,0 +1,13 @@
+Control: Florence_PreMichael_Control
+     Description: Hurricane Florence response simulation ending before Tropical Storm Michael impacts
+     Last Modified Date: 29 May 2026
+     Last Modified Time: 17:52:05
+     Version: 4.13
+     Time Zone ID: America/New_York
+     Time Zone GMT Offset: -18000000
+     Start Date: 9 September 2018
+     Start Time: 23:00
+     End Date: 10 October 2018
+     End Time: 23:00
+     Time Interval: 60
+End:

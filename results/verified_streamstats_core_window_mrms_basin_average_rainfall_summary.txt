@@ -1,0 +1,70 @@
+MRMS Basin-Average Rainfall Processing Summary
+==============================================
+
+Project:
+Rainfall-to-Streamflow Modeling of Hurricane Florence Flooding
+in the Trent River Watershed, North Carolina
+
+Rainfall product:
+MRMS GaugeCorr_QPE_01H
+
+Processing method:
+Hourly MRMS rainfall grids were clipped to the USGS-derived Trent River
+watershed polygon. Non-negative valid grid-cell values within the polygon
+were averaged for each hourly timestep.
+
+Processed rainfall record
+-------------------------
+Number of hourly grids processed: 120
+First rainfall timestamp: 2018-09-12 20:00:00-04:00
+Last rainfall timestamp: 2018-09-17 19:00:00-04:00
+Valid watershed cells per hour: 428 to 428
+
+Storm rainfall results
+----------------------
+Total basin-average precipitation: 613.02 mm
+Total basin-average precipitation: 24.13 inches
+Maximum hourly basin-average precipitation: 53.787 mm
+Maximum hourly rainfall timestamp: 2018-09-14 22:00:00-04:00
+Maximum grid-cell rainfall observed in any hour: 106.300 mm
+
+Observed streamflow comparison
+------------------------------
+Observed peak discharge: 67,700 cubic feet per second
+Observed peak discharge timestamp: 2018-09-16 07:00:00-04:00
+Descriptive lag from maximum hourly basin rainfall to peak discharge: 33.0 hours
+
+Important interpretation note
+-----------------------------
+The lag calculation compares the single wettest basin-average rainfall hour
+with the observed discharge peak. It is a descriptive screening metric only;
+formal hydrologic interpretation should consider cumulative rainfall,
+antecedent wetness, routing, and model calibration.
+
+Raster metadata from first processed MRMS file
+----------------------------------------------
+Driver: GRIB
+Coordinate reference system: GEOGCS["Coordinate System imported from GRIB file",DATUM["unnamed",SPHEROID["Spheroid imported from GRIB file",6378160,298.253916296469]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AXIS["Latitude",NORTH],AXIS["Longitude",EAST]]
+Raster dimensions: 7000 columns x 3500 rows
+NoData value: None
+
+GRIB band tags
+--------------
+GRIB_UNIT: [mm]
+GRIB_COMMENT: Local Gauge Bias Corrected Radar Precipitation Accumulation 1-hour [mm]
+GRIB_ELEMENT: GaugeCorrQPE01H
+GRIB_SHORT_NAME: 0-GPML
+GRIB_REF_TIME: 1536796800
+GRIB_VALID_TIME: 1536796800
+GRIB_FORECAST_SECONDS: 0
+GRIB_DISCIPLINE: 209
+GRIB_IDS: CENTER=161(US-OAR) SUBCENTER=0 MASTER_TABLE=255 LOCAL_TABLE=1 SIGNF_REF_TIME=3(Observation_time) REF_TIME=2018-09-13T00:00:00Z PROD_STATUS=2(Research) TYPE=7(Processed_radar_observations)
+GRIB_PDS_PDTN: 0
+GRIB_PDS_TEMPLATE_NUMBERS: 6 9 8 0 97 0 0 0 0 0 0 0 0 102 0 0 0 0 0 255 1 0 0 0 0
+GRIB_PDS_TEMPLATE_ASSEMBLED_VALUES: 6 9 8 0 97 0 0 0 0 102 0 0 255 1 0
+
+Quality note
+------------
+USACE HEC-HMS guidance recommends evaluating gridded precipitation quality
+against other rainfall observations before formal hydrologic calibration.
+A rain-gauge comparison will be considered as a later quality-control step.

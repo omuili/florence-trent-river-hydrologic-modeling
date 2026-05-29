@@ -1,0 +1,84 @@
+Basin: Nahunta_Clark_Trial_01
+     Description: No-baseflow Clark routing trial with increased Tc and storage coefficient
+     Last Modified Date: 29 May 2026
+     Last Modified Time: 18:17:28
+     Version: 4.13
+     Filepath Separator: \
+     Unit System: English
+     Missing Flow To Zero: No
+     Enable Flow Ratio: No
+     Compute Local Flow At Junctions: No
+     Unregulated Output Required: No
+
+     Enable Sediment Routing: No
+End:
+
+Subbasin: Nahunta_Swamp_02091000
+     Description: Verified 80.40 square mile watershed upstream of USGS 02091000
+     Last Modified Date: 29 May 2026
+     Last Modified Time: 18:32:34
+     Canvas X: 514.657980456026
+     Canvas Y: 1153.0944625407164
+     From Canvas X: 514.657980456026
+     From Canvas Y: 1153.0944625407164
+     Area: 80.40
+     Observed Hydrograph Gage: Nahunta_USGS_02091000_Hrly_f
+
+     Discretization: None
+     File: Nahunta_Clark_Trial_01.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+     Initial Loss: 0.50
+     Constant Loss Rate: 0.10
+
+     Transform: Clark
+     Clark Method: Specified
+     Time of Concentration: 16.0
+     Storage Coefficient: 30.0
+     Time Area Method: Default
+
+     Baseflow: None
+End:
+
+Basin Layer Properties:
+     Element Layer:
+          Name: Icons
+          Layer shown: Yes
+     End Layer:
+End:
+
+Basin Spatial Properties:
+End:
+
+Basin Schematic Properties:
+     Last View N: 1178.0944625407164
+     Last View S: 1128.0944625407164
+     Last View W: 489.65798045602605
+     Last View E: 539.657980456026
+     Maximum View N: 1178.0944625407164
+     Maximum View S: 1128.0944625407164
+     Maximum View W: 489.65798045602605
+     Maximum View E: 539.657980456026
+     Extent Method: Manual
+     Buffer: 0
+     Draw Icons: Yes
+     Draw Icon Labels: Name
+     Draw Map Objects: No
+     Draw Gridlines: No
+     Draw Flow Direction: No
+     Draw HillShade Layer: Yes
+     Draw Elevation Layer: Yes
+     Elevation Layer Color Palette: Gray Scale
+     Ignore Elevation Color Ramp Scale: No
+     Use Interpolated Color Ramp for Elevation Layer: Yes
+     Color Ramp Opacity Level for Elevation Layer: 33.0
+     Fix Element Locations: No
+     Fix Hydrologic Order: No
+End:

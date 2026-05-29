@@ -1,0 +1,61 @@
+Rainfall-Streamflow Alignment Audit Summary
+===========================================
+
+Project:
+Rainfall-to-Streamflow Modeling of Hurricane Florence Flooding
+in the Trent River Watershed, North Carolina
+
+Audit period:
+2018-09-10 00:00:00-04:00 through 2018-10-11 00:00:00-04:00, exclusive
+
+Expected hourly timeline
+------------------------
+Expected number of hourly timesteps: 744
+
+Rainfall coverage
+-----------------
+Hours with MRMS rainfall values: 744
+Hours missing MRMS rainfall values: 0
+Rainfall total from complete MRMS record: 25.60 inches
+
+Streamflow coverage
+-------------------
+Hours with USGS discharge values: 644
+Hours missing USGS discharge values: 100
+
+Effect of merging rainfall with discharge
+-----------------------------------------
+Rainfall occurring during hours with missing discharge: 3.85 inches
+Rainfall retained only where discharge exists: 21.75 inches
+
+Missing-discharge periods
+-------------------------
+- 2018-09-15 13:00:00-04:00 through 2018-09-15 17:00:00-04:00: 5 missing hours, 0.77 inches of rainfall
+- 2018-09-15 19:00:00-04:00 through 2018-09-15 23:00:00-04:00: 5 missing hours, 0.77 inches of rainfall
+- 2018-09-16 01:00:00-04:00 through 2018-09-16 05:00:00-04:00: 5 missing hours, 1.11 inches of rainfall
+- 2018-09-16 08:00:00-04:00 through 2018-09-16 11:00:00-04:00: 4 missing hours, 0.78 inches of rainfall
+- 2018-09-16 13:00:00-04:00 through 2018-09-16 17:00:00-04:00: 5 missing hours, 0.07 inches of rainfall
+- 2018-09-16 19:00:00-04:00 through 2018-09-16 23:00:00-04:00: 5 missing hours, 0.14 inches of rainfall
+- 2018-09-17 01:00:00-04:00 through 2018-09-17 05:00:00-04:00: 5 missing hours, 0.11 inches of rainfall
+- 2018-09-17 07:00:00-04:00 through 2018-09-17 11:00:00-04:00: 5 missing hours, 0.01 inches of rainfall
+- 2018-09-17 13:00:00-04:00 through 2018-09-17 17:00:00-04:00: 5 missing hours, 0.07 inches of rainfall
+- 2018-09-17 19:00:00-04:00 through 2018-09-17 23:00:00-04:00: 5 missing hours, 0.00 inches of rainfall
+- 2018-09-18 01:00:00-04:00 through 2018-09-18 05:00:00-04:00: 5 missing hours, 0.00 inches of rainfall
+- 2018-09-18 07:00:00-04:00 through 2018-09-18 11:00:00-04:00: 5 missing hours, 0.00 inches of rainfall
+- 2018-09-18 13:00:00-04:00 through 2018-09-18 17:00:00-04:00: 5 missing hours, 0.02 inches of rainfall
+- 2018-09-18 19:00:00-04:00 through 2018-09-18 23:00:00-04:00: 5 missing hours, 0.00 inches of rainfall
+- 2018-09-19 01:00:00-04:00 through 2018-09-19 05:00:00-04:00: 5 missing hours, 0.00 inches of rainfall
+- 2018-09-19 07:00:00-04:00 through 2018-09-19 11:00:00-04:00: 5 missing hours, 0.00 inches of rainfall
+- 2018-09-19 13:00:00-04:00 through 2018-09-19 17:00:00-04:00: 5 missing hours, 0.00 inches of rainfall
+- 2018-09-19 19:00:00-04:00 through 2018-09-19 23:00:00-04:00: 5 missing hours, 0.00 inches of rainfall
+- 2018-09-20 01:00:00-04:00 through 2018-09-20 05:00:00-04:00: 5 missing hours, 0.00 inches of rainfall
+- 2018-09-20 07:00:00-04:00 through 2018-09-20 12:00:00-04:00: 6 missing hours, 0.00 inches of rainfall
+
+Interpretation
+--------------
+Rainfall totals for model forcing must be calculated from the complete
+MRMS rainfall series, regardless of whether discharge observations are
+missing during some hours. If missing discharge overlaps substantial
+rainfall or the flood hydrograph peak, discharge-volume calculations
+will require a documented gap-handling decision before calibration or
+runoff-ratio analysis.
