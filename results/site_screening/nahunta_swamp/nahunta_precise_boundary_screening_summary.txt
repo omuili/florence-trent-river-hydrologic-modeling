@@ -1,0 +1,26 @@
+Nahunta Precise Boundary Screening Summary
+==========================================
+
+Candidate site:
+Nahunta Swamp near Shine, NC
+
+USGS station:
+02091000
+
+Boundary method:
+USGS NLDI basin endpoint with splitCatchment=true
+
+Drainage-area validation
+------------------------
+Published USGS drainage area: 80.40 square miles
+Calculated polygon area: 79.80 square miles
+Difference: -0.60 square miles
+Percent difference: -0.75 percent
+Acceptance tolerance: plus or minus 2.00 percent
+
+Decision
+--------
+Accept this point-specific boundary for initial Nahunta screening.
+
+Output boundary file:
+data\raw\watershed\nahunta_screening\nahunta_swamp_usgs_02091000_nldi_splitcatchment_basin.geojson

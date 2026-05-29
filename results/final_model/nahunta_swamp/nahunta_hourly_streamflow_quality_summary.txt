@@ -1,0 +1,73 @@
+Nahunta Hourly Observed Streamflow Quality Summary
+================================================
+
+Final modeling candidate:
+Nahunta Swamp near Shine, NC
+
+USGS station:
+02091000
+
+Analysis window:
+2018-09-10 00:00:00-04:00 through 2018-10-11 00:00:00-04:00, exclusive
+
+MRMS rainfall forcing
+---------------------
+Complete basin-average rainfall depth: 15.13 inches
+
+Continuous discharge retrieval
+------------------------------
+Number of continuous USGS observations downloaded: 2,820
+First continuous observation: 2018-09-10 00:00:00-04:00
+Last continuous observation: 2018-10-11 00:00:00-04:00
+
+Hourly observed discharge coverage
+----------------------------------
+Expected hourly timesteps: 744
+Hours with at least one observed discharge value: 724
+Hours with no observed discharge value: 20
+Longest missing hourly period: 1 hours
+Rainfall occurring during missing-discharge hours: 1.19 inches
+
+Observed peak comparison
+------------------------
+Maximum discharge in retrieved continuous record: 6,060 cfs
+Timestamp of retrieved maximum: 2018-09-15 04:30:00-04:00
+USGS Florence-report peak reference: 6,060 cfs on 2018-09-15
+Difference from report peak: 0 cfs
+Percent difference from report peak: 0.00 percent
+
+Pre-event discharge screening
+-----------------------------
+Median hourly discharge before substantial Florence rainfall:
+76 cfs
+
+Missing hourly discharge periods
+--------------------------------
+- 2018-09-14 16:00:00-04:00 through 2018-09-14 16:00:00-04:00: 1 hours
+- 2018-09-14 18:00:00-04:00 through 2018-09-14 18:00:00-04:00: 1 hours
+- 2018-09-14 20:00:00-04:00 through 2018-09-14 20:00:00-04:00: 1 hours
+- 2018-09-20 20:00:00-04:00 through 2018-09-20 20:00:00-04:00: 1 hours
+- 2018-09-20 22:00:00-04:00 through 2018-09-20 22:00:00-04:00: 1 hours
+- 2018-09-21 00:00:00-04:00 through 2018-09-21 00:00:00-04:00: 1 hours
+- 2018-09-21 02:00:00-04:00 through 2018-09-21 02:00:00-04:00: 1 hours
+- 2018-09-21 04:00:00-04:00 through 2018-09-21 04:00:00-04:00: 1 hours
+- 2018-09-21 06:00:00-04:00 through 2018-09-21 06:00:00-04:00: 1 hours
+- 2018-09-21 08:00:00-04:00 through 2018-09-21 08:00:00-04:00: 1 hours
+- 2018-09-24 14:00:00-04:00 through 2018-09-24 14:00:00-04:00: 1 hours
+- 2018-09-24 16:00:00-04:00 through 2018-09-24 16:00:00-04:00: 1 hours
+- 2018-09-24 18:00:00-04:00 through 2018-09-24 18:00:00-04:00: 1 hours
+- 2018-09-24 20:00:00-04:00 through 2018-09-24 20:00:00-04:00: 1 hours
+- 2018-09-24 22:00:00-04:00 through 2018-09-24 22:00:00-04:00: 1 hours
+- 2018-09-25 00:00:00-04:00 through 2018-09-25 00:00:00-04:00: 1 hours
+- 2018-09-25 02:00:00-04:00 through 2018-09-25 02:00:00-04:00: 1 hours
+- 2018-09-25 04:00:00-04:00 through 2018-09-25 04:00:00-04:00: 1 hours
+- 2018-09-25 06:00:00-04:00 through 2018-09-25 06:00:00-04:00: 1 hours
+- 2018-09-25 08:00:00-04:00 through 2018-09-25 08:00:00-04:00: 1 hours
+
+Decision rule
+-------------
+If hourly coverage is complete or missing periods are short and do not
+remove a substantial portion of storm rainfall or the observed peak, this
+series may be used for HEC-HMS hydrograph calibration and performance
+assessment. If major gaps overlap storm rainfall or the peak response,
+calibration metrics must be restricted or the site reconsidered.

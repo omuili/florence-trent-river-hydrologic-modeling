@@ -1,4 +1,4 @@
-"""Construct a basin-average Hurricane Florence rainfall time series.
+﻿"""Construct a basin-average Hurricane Florence rainfall time series.
 
 Study area:
     Trent River watershed upstream of USGS 02092500, North Carolina
@@ -43,9 +43,9 @@ from shapely.geometry import mapping
 # ---------------------------------------------------------------------
 
 RAINFALL_DIR = Path("data/raw/rainfall/mrms_gaugecorr_qpe_01h")
-WATERSHED_FILE = Path("data/raw/watershed/trent_river_usgs_02092500_basin.geojson")
+WATERSHED_FILE = Path("data/processed/verified_streamstats_trent_river_basin.geojson")
 STREAMFLOW_FILE = Path(
-    "data/processed/usgs_02092500_discharge_processed_2018-09-10_to_2018-09-22.csv"
+    "data/processed/usgs_02092500_discharge_extended_hourly_20180910_20181010.csv"
 )
 
 PROCESSED_DIR = Path("data/processed")
@@ -54,13 +54,20 @@ FIGURES_DIR = Path("figures")
 
 OUTPUT_RAINFALL_CSV = (
     PROCESSED_DIR
-    / "mrms_trent_river_basin_average_rainfall_20180913_20180917.csv"
+    / "mrms_trent_river_basin_average_rainfall_20180910_20181010.csv"
 )
 
-OUTPUT_SUMMARY = RESULTS_DIR / "mrms_basin_average_rainfall_summary.txt"
-OUTPUT_FIGURE = FIGURES_DIR / "mrms_basin_rainfall_and_observed_streamflow.png"
+OUTPUT_SUMMARY = (
+    RESULTS_DIR
+    / "mrms_florence_recession_screening_rainfall_summary.txt"
+)
 
-EXPECTED_NUMBER_OF_FILES = 120
+OUTPUT_FIGURE = (
+    FIGURES_DIR
+    / "mrms_florence_recession_screening_rainfall_and_streamflow.png"
+)
+
+EXPECTED_NUMBER_OF_FILES = 744
 
 
 def create_directories() -> None:
@@ -249,7 +256,7 @@ def process_all_rainfall_grids(
 
         print(
             f"[{index:03d}/{len(rainfall_files):03d}] "
-            f"{record['timestamp_utc']:%Y-%m-%d %H:%M UTC} — "
+            f"{record['timestamp_utc']:%Y-%m-%d %H:%M UTC} â€” "
             f"mean rainfall = {record['basin_mean_precip_mm']:.3f} mm"
         )
 
@@ -281,7 +288,7 @@ def save_rainfall_csv(rainfall: pd.DataFrame) -> None:
 
 
 def load_streamflow_hourly() -> pd.DataFrame:
-    """Load USGS streamflow and aggregate observations to hourly mean discharge."""
+    """Load the extended hourly USGS streamflow record."""
     if not STREAMFLOW_FILE.exists():
         raise FileNotFoundError(
             f"Observed streamflow file not found: {STREAMFLOW_FILE}"
@@ -299,14 +306,7 @@ def load_streamflow_hourly() -> pd.DataFrame:
         errors="coerce",
     )
 
-    hourly_streamflow = (
-        streamflow.set_index("time_local")["discharge_cfs"]
-        .resample("1h")
-        .mean()
-        .reset_index()
-    )
-
-    return hourly_streamflow
+    return streamflow[["time_local", "discharge_cfs"]].dropna()
 
 
 def create_summary(

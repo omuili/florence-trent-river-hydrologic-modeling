@@ -1,0 +1,57 @@
+Nahunta Swamp Site Plausibility Screening Summary
+================================================
+
+Candidate modeling site:
+Nahunta Swamp near Shine, NC
+
+USGS station:
+02091000
+
+Boundary verification
+---------------------
+Boundary source: USGS NLDI point-specific basin, splitCatchment=true
+Published drainage area: 80.40 square miles
+Calculated boundary area from prior validation: 79.80 square miles
+Boundary difference from published area: -0.75 percent
+
+Screening period
+----------------
+September 10, 2018 through October 10, 2018
+Hourly rainfall grids processed: 744
+Valid watershed rainfall cells per hour: 203 to 203
+Daily discharge records analyzed: 31
+USGS daily discharge approval statuses returned: Approved
+
+Rainfall forcing
+----------------
+Complete MRMS basin-average rainfall depth: 15.13 inches
+Rainfall from September 23 through October 10: 0.69 inches
+
+Official daily discharge response
+---------------------------------
+Pre-event daily mean baseline discharge: 65 cfs
+Maximum daily mean discharge: 5,100 cfs
+Date of maximum daily mean discharge: 2018-09-15
+Total discharge depth over screening interval: 8.36 inches
+Above-baseline discharge depth over screening interval: 7.54 inches
+
+Water-balance plausibility metric
+---------------------------------
+Above-baseline discharge depth / rainfall depth: 0.499
+
+Screening decision
+------------------
+PASS INITIAL WATER-BALANCE PLAUSIBILITY SCREEN.
+
+The official daily mean above-baseline discharge depth does not exceed
+the complete MRMS basin-average rainfall depth. Nahunta Swamp is a
+defensible candidate for the HEC-HMS event-reconstruction workflow,
+subject to final inspection of the rainfall/discharge figure and later
+documentation of modeling uncertainties.
+
+Interpretation note
+-------------------
+This is an initial site-selection screen, not a complete calibrated model
+assessment. Because the pre-Michael window may truncate part of the recession
+limb, a physically plausible ratio below one supports proceeding, but does
+not by itself validate a hydrologic model.

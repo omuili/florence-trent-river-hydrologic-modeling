@@ -1,4 +1,4 @@
-"""Map accumulated MRMS Hurricane Florence rainfall over the Trent River watershed.
+﻿"""Map accumulated MRMS Hurricane Florence rainfall over the Trent River watershed.
 
 Inputs:
     - Hourly MRMS GaugeCorr_QPE_01H GRIB2 files
@@ -28,14 +28,13 @@ from shapely.geometry import Point, mapping
 
 
 RAINFALL_DIR = Path("data/raw/rainfall/mrms_gaugecorr_qpe_01h")
-WATERSHED_FILE = Path("data/raw/watershed/trent_river_usgs_02092500_basin.geojson")
+WATERSHED_FILE = Path("data/processed/verified_streamstats_trent_river_basin.geojson")
 
 FIGURES_DIR = Path("figures")
 RESULTS_DIR = Path("results")
 
-OUTPUT_FIGURE = FIGURES_DIR / "mrms_accumulated_storm_rainfall_trent_river.png"
-OUTPUT_SUMMARY = RESULTS_DIR / "mrms_accumulated_rainfall_spatial_summary.txt"
-
+OUTPUT_FIGURE = FIGURES_DIR / "mrms_full_event_accumulated_rainfall_trent_river.png"
+OUTPUT_SUMMARY = RESULTS_DIR / "mrms_full_event_accumulated_rainfall_spatial_summary.txt"
 GAUGE_LONGITUDE = -77.46138889
 GAUGE_LATITUDE = 35.06416667
 
@@ -83,6 +82,7 @@ def main() -> None:
     )
 
     accumulated_mm = None
+    basin_valid_mask = None
     output_transform = None
     output_crs = None
 
@@ -108,10 +108,14 @@ def main() -> None:
 
                 if accumulated_mm is None:
                     accumulated_mm = hourly_mm.filled(0).astype(float)
+                    basin_valid_mask = ~np.ma.getmaskarray(hourly_mm)
                     output_transform = transform
                     output_crs = source.crs
                 else:
                     accumulated_mm += hourly_mm.filled(0)
+                    basin_valid_mask = basin_valid_mask | (~np.ma.getmaskarray(hourly_mm))
+
+                
 
             print(f"[{index:03d}/{len(rainfall_files):03d}] Added {rainfall_file.name}")
 
@@ -121,8 +125,14 @@ def main() -> None:
     if accumulated_mm is None or output_transform is None:
         raise RuntimeError("No rainfall grids were accumulated.")
 
-    basin_mask = accumulated_mm <= 0
-    accumulated_inches = np.ma.masked_where(basin_mask, accumulated_mm / 25.4)
+  
+    if basin_valid_mask is None:
+        raise RuntimeError("No valid watershed mask was created.")
+
+    accumulated_inches = np.ma.masked_where(
+        ~basin_valid_mask,
+        accumulated_mm / 25.4,
+    )
 
     valid_values = accumulated_inches.compressed()
     if valid_values.size == 0:

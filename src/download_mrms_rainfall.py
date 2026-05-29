@@ -1,5 +1,13 @@
 """Download hourly MRMS gauge-corrected precipitation for Hurricane Florence.
 
+Florence recession-screening window:
+    2018-09-10 04:00 UTC through 2018-10-11 04:00 UTC, exclusive
+
+Rationale:
+    This period captures the Florence rainfall and prolonged streamflow
+    recession while ending immediately before Tropical Storm Michael
+    affected eastern North Carolina on October 11-12, 2018.
+    
 Study site:
     Trent River watershed upstream of USGS 02092500, North Carolina
 
@@ -7,8 +15,8 @@ Rainfall product:
     MRMS GaugeCorr_QPE_01H
     Hourly gauge-corrected quantitative precipitation estimate in GRIB2 format
 
-Initial storm window:
-    2018-09-13 00:00 UTC through 2018-09-18 00:00 UTC, exclusive
+Full event modeling window:
+    2018-09-10 04:00 UTC through 2018-09-23 04:00 UTC, exclusive
 
 Outputs:
     - Compressed hourly MRMS GRIB2 rainfall files
@@ -38,8 +46,8 @@ import requests
 PRODUCT_NAME = "GaugeCorr_QPE_01H"
 BASE_URL = "https://mtarchive.geol.iastate.edu"
 
-START_UTC = datetime(2018, 9, 13, 0, 0, tzinfo=timezone.utc)
-END_UTC = datetime(2018, 9, 18, 0, 0, tzinfo=timezone.utc)
+START_UTC = datetime(2018, 9, 10, 4, 0, tzinfo=timezone.utc)
+END_UTC = datetime(2018, 10, 11, 4, 0, tzinfo=timezone.utc)
 
 RAINFALL_DIR = Path("data/raw/rainfall/mrms_gaugecorr_qpe_01h")
 RESULTS_DIR = Path("results")

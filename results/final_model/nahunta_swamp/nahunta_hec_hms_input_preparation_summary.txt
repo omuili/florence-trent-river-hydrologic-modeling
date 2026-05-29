@@ -1,0 +1,91 @@
+Nahunta HEC-HMS Input Preparation Summary
+========================================
+
+Final model site:
+Nahunta Swamp near Shine, NC
+
+USGS station:
+02091000
+
+Model input configuration
+-------------------------
+Unit system: U.S. Customary
+Computation interval recommended for baseline model: 1 hour
+Drainage area: 80.40 square miles
+Precipitation method: Specified Hyetograph
+Rainfall time series units: incremental inches per hour
+Observed-flow time series units: cubic feet per second
+
+Simulation period
+-----------------
+2018-09-10 00:00:00-04:00 through 2018-10-11 00:00:00-04:00, exclusive
+Number of hourly precipitation values: 744
+Number of hourly observed/completed flow values: 744
+
+Rainfall forcing
+----------------
+Complete basin-average MRMS precipitation depth: 15.13 inches
+Missing rainfall values: 0
+
+Observed-flow completion
+------------------------
+Observed hourly flow values retained: 724
+Interpolated isolated one-hour flow values: 20
+Rainfall occurring during interpolated-flow hours: 1.19 inches
+Maximum allowed consecutive interpolated gap: 1 hour
+
+Interpolated hourly periods
+---------------------------
+- 2018-09-14 16:00:00-04:00: one interpolated hourly mean discharge value
+- 2018-09-14 18:00:00-04:00: one interpolated hourly mean discharge value
+- 2018-09-14 20:00:00-04:00: one interpolated hourly mean discharge value
+- 2018-09-20 20:00:00-04:00: one interpolated hourly mean discharge value
+- 2018-09-20 22:00:00-04:00: one interpolated hourly mean discharge value
+- 2018-09-21 00:00:00-04:00: one interpolated hourly mean discharge value
+- 2018-09-21 02:00:00-04:00: one interpolated hourly mean discharge value
+- 2018-09-21 04:00:00-04:00: one interpolated hourly mean discharge value
+- 2018-09-21 06:00:00-04:00: one interpolated hourly mean discharge value
+- 2018-09-21 08:00:00-04:00: one interpolated hourly mean discharge value
+- 2018-09-24 14:00:00-04:00: one interpolated hourly mean discharge value
+- 2018-09-24 16:00:00-04:00: one interpolated hourly mean discharge value
+- 2018-09-24 18:00:00-04:00: one interpolated hourly mean discharge value
+- 2018-09-24 20:00:00-04:00: one interpolated hourly mean discharge value
+- 2018-09-24 22:00:00-04:00: one interpolated hourly mean discharge value
+- 2018-09-25 00:00:00-04:00: one interpolated hourly mean discharge value
+- 2018-09-25 02:00:00-04:00: one interpolated hourly mean discharge value
+- 2018-09-25 04:00:00-04:00: one interpolated hourly mean discharge value
+- 2018-09-25 06:00:00-04:00: one interpolated hourly mean discharge value
+- 2018-09-25 08:00:00-04:00: one interpolated hourly mean discharge value
+
+Official peak benchmark
+-----------------------
+Instantaneous USGS Florence peak retained separately from hourly calibration series:
+6,060 cfs at 2018-09-15 04:30:00-04:00
+
+Daily-flow validation of completed hourly series
+------------------------------------------------
+Official USGS daily records used for validation: 31
+Maximum absolute difference between completed-hourly daily mean
+and official USGS daily mean: 183.49 cfs
+Date of maximum difference: 2018-09-14
+Mean absolute daily difference: 15.57 cfs
+
+Water-balance consistency check
+-------------------------------
+Completed-hourly total flow depth: 8.38 inches
+Official-daily total flow depth: 8.36 inches
+Completed-hourly above-baseline flow depth: 7.48 inches
+Official-daily above-baseline flow depth: 7.45 inches
+Completed-hourly above-baseline depth / rainfall depth:
+0.494
+Official-daily above-baseline depth / rainfall depth:
+0.492
+
+Modeling decision
+-----------------
+The Nahunta Swamp rainfall and discharge datasets are suitable for developing
+the baseline HEC-HMS event-reconstruction model. Hourly discharge gaps are
+isolated and explicitly flagged after interpolation. The measured
+instantaneous peak of 6,060 cfs remains a separate benchmark, while the
+completed hourly discharge series will be used for one-hour hydrograph
+comparison and initial calibration diagnostics.
